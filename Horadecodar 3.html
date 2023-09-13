@@ -16,6 +16,25 @@
      while ( segundo_valor <= 0){
         segundo = prompt("Informe o segundo valor");
      }
+     //  2 - Crie uma bomba relógio (usando somente código - para deixar claro!) cuja contagem regressiva vá de 30 a 0. Utilize "document.write" para escrever em tela e no final da repetição escreva "EXPLOSÃO".
+
+
+        var bomba = 30;
+
+        while (bomba >= 0) {
+            var texto = "<p class='exemplo'>" + "Contagem em " + bomba + "<br></p>";
+            document.write(texto);
+
+            console.log(texto);
+
+            if (bomba === 0) {
+                document.write("EXPLOSÃO");
+            }
+
+            bomba = bomba - 1;
+        }
+
+
     </script>
     
 </body>
